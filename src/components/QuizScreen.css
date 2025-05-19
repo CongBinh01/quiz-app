@@ -1,0 +1,106 @@
+.quiz-container {
+  background-color: #1a1a4f;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quiz-header h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.quiz-header p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer-option {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.answer-option.selected {
+  border-color: red;
+  color: red;
+}
+
+.next-button {
+  margin-top: 30px;
+  background-color: gray;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+}
+
+.next-button.active {
+  background-color: red;
+  cursor: pointer;
+}
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.answer-option.selected .custom-radio {
+  border-color: red;
+  background-color: transparent;
+}
+
+.answer-option.selected .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: red;
+
+  mask-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 24 24' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.285 6.709a1 1 0 00-1.414-1.418L9 15.164l-3.87-3.87a1 1 0 00-1.415 1.415l4.578 4.578a1 1 0 001.414 0l10.578-10.578z'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 14px;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  color: white;
+}
+
+.close-btn {
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+

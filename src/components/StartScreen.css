@@ -1,0 +1,25 @@
+.start-screen {
+    background-color: #1b2141;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.robot-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.start-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s
+}
+.start-button:hover {
+  background-color: #c0392b;
+}

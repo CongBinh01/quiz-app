@@ -12,7 +12,7 @@ function StartScreen() {
   return (
     <div className="start-screen">
       <img
-        src="/robot.png" // bạn cần thêm ảnh robot vào public/robot.png
+        src="/robotStart.png"
         alt="Robot"
         className="robot-image"
       />

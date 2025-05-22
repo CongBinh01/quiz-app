@@ -16,9 +16,13 @@
     color: white;
     border: none;
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
-    transition: 0.3s
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
 }
 .start-button:hover {
   background-color: #c0392b;

@@ -1,49 +1,51 @@
-.result-screen {
-  background-color: #1a1a4f;
-  color: #333;
-  min-height: 100vh;
+.result-container {
+  height: 100vh;
+  background-color: #1b2450;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.result-card {
+.result-box {
   background-color: white;
-  border-radius: 16px;
-  padding: 30px 20px;
+  padding: 30px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 350px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .result-icon {
-  font-size: 48px;
-  margin-bottom: 16px;
+   width: 100px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.result-card h2 {
+.result-box h2 {
   font-size: 24px;
-  margin-bottom: 8px;
+  margin: 10px 0;
+  color: #333;
 }
 
-.result-card p {
+.result-box p {
   font-size: 16px;
-  margin: 4px 0;
+  margin: 5px 0;
+  color: #555;
 }
 
-.play-again-btn {
-  background-color: red;
+
+.play-again-button {
+  background-color: #e63946;
   color: white;
-  padding: 10px 24px;
   border: none;
-  border-radius: 24px;
-  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
   margin-top: 20px;
   cursor: pointer;
-  transition: background-color 0.2s;
 }
 
-.play-again-btn:hover {
-  background-color: darkred;
+.play-again-button:hover {
+  background-color: #c7303d;
 }
